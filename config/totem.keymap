@@ -22,6 +22,10 @@
 #define Game        4
 #define Gameplus    5
 
+&uc {
+  default-mode = <UC_MODE_LINUX>;  // Replace with desired input system.
+};
+
 &mt {
     quick-tap-ms = <100>;
     global-quick-tap;
