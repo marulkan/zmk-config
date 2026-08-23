@@ -10,10 +10,10 @@
 //
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-#include <behaviors.dtsi>
 #include <behaviors/unicode.dtsi>
-#include <dt-bindings/zmk/keys.h>
 #include <zmk-unicode/keys-full.h>
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
 
 #define Base        0
 #define Nav         1
@@ -23,7 +23,7 @@
 #define Gameplus    5
 
 &uc {
-  default-mode = <UC_MODE_LINUX_ALT>;  // Replace with desired input system.
+    default-mode = <UC_MODE_LINUX_ALT>;  // Replace with desired input system.
 };
 
 &mt {
@@ -81,10 +81,10 @@
         Sym {
             display-name = "Sym";
             bindings = <
-                &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp SQT    &kp DQT
-                &trans    &trans  &trans    &trans      &trans         &trans     &trans         &trans           &trans     &trans
-&trans          &trans    &trans  &trans    &trans      &trans         &kp UNDER  &kp EQUAL      &trans           &trans     &kp PIPE     &kp HOME
-                                  &trans    &trans      &trans         &trans     &trans         &trans
+        &kp EXCL  &kp AT  &kp HASH       &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK    &kp SQT       &kp DQT
+        &trans    &trans  &kp RA(EQUAL)  &kp RG(E)   &trans         &trans     &trans         &kp RA(SEMICOLON)  &kp RA(APOS)  &kp RA(LEFT_BRACKET)
+&trans  &trans    &trans  &trans         &trans      &trans         &kp UNDER  &kp EQUAL      &trans             &trans        &kp BACKSLASH         &kp HOME
+                          &trans         &trans      &trans         &trans     &trans         &trans
             >;
         };
 
