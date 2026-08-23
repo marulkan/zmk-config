@@ -23,7 +23,7 @@
 #define Gameplus    5
 
 &uc {
-  default-mode = <UC_MODE_LINUX>;  // Replace with desired input system.
+  default-mode = <UC_MODE_LINUX_ALT>;  // Replace with desired input system.
 };
 
 &mt {
@@ -82,8 +82,8 @@
             display-name = "Sym";
             bindings = <
                 &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp SQT        &kp DQT
-                &trans    &trans  &trans    &trans      &trans         &trans     &trans         &trans           &uc UC_SV_AO   &trans
-&studio_unlock  &trans    &trans  &trans    &trans      &trans         &kp UNDER  &kp EQUAL      &uc UC_SV_OE     &uc UC_SV_AE   &kp SLASH  &kp HOME
+                &trans    &trans  &trans    &trans      &trans         &trans     &trans         &uc UC_SV_AO     &uc UC_SV_AE   &uc UC_SV_OE
+&trans          &trans    &trans  &trans    &trans      &trans         &kp UNDER  &kp EQUAL      &trans           &trans         &kp SLASH      &kp HOME
                                   &trans    &trans      &trans         &trans     &trans         &trans
             >;
         };
@@ -91,10 +91,10 @@
         Fun {
             display-name = "Fun";
             bindings = <
-        &bootloader  &trans  &trans  &trans  &to 4     &trans  &trans  &trans  &kp END  &kp F1
-        &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &kp F10
-&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &kp F20  &kp F7
-                             &trans  &trans  &trans    &trans  &trans  &trans
+        &bootloader  &studio_unlock  &trans  &trans  &to 4     &trans  &trans  &trans  &kp END  &kp F1
+        &trans       &trans          &trans  &trans  &trans    &trans  &trans  &trans  &trans   &kp F10
+&trans  &trans       &trans          &trans  &trans  &trans    &trans  &trans  &trans  &trans   &kp F20  &kp F7
+                                     &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
