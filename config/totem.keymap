@@ -200,9 +200,9 @@
         Sym {
             display-name = "Sym";
             bindings = <
-       &kp EXCL      &kp AT         &kp HASH   &kp DOLLAR  &kp PERCENT      &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACE       &kp SQT       &trans
-       &kp QUESTION  &kp PIPE       &kp SLASH  &kp TILDE   &kp CARET        &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET  &kp LEFT_BRACE        &kp RA(APOS)  &trans
-&to 0  &trans        &kp BACKSLASH  &trans     &kp GRAVE   &kp AMPERSAND    &kp DOUBLE_QUOTES      &kp APOS          &kp RA(LEFT_BRACKET)  &kp RA(SEMI)  &trans  &trans
+       &kp EXCL      &kp AT         &kp HASH   &kp DOLLAR  &kp PERCENT      &kp RIGHT_PARENTHESIS  &kp LEFT_BRACKET  &kp RIGHT_BRACE    &trans    &trans
+       &kp QUESTION  &kp PIPE       &kp SLASH  &kp TILDE   &kp CARET        &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET  &kp LEFT_BRACE     &kp APOS  &trans
+&to 0  &trans        &kp BACKSLASH  &trans     &kp GRAVE   &kp AMPERSAND    &trans                 &trans            &kp DOUBLE_QUOTES  &trans    &trans  &trans
                                     &trans     &trans      &trans           &trans                 &trans            &trans
             >;
         };
