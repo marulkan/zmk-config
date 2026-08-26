@@ -68,6 +68,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
+            keep-mods = <(MOD_LSFT)>;
         };
 
         k_ae: k_ae {
@@ -77,6 +78,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
+            keep-mods = <(MOD_LSFT)>;
         };
 
         l_oe: l_oe {
@@ -86,6 +88,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_RALT)>;
+            keep-mods = <(MOD_LSFT)>;
         };
 
         sway_enter_layer: sway_enter_layer {
