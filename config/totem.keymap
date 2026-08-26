@@ -105,6 +105,34 @@
             bindings = <&kp LG(Q) &to 0>;
             label = "SWAY_WORKSPACE";
         };
+
+        sway_enter: sway_key_and_exit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(ENTER) &to 0>;
+            label = "SWAY_KEY_AND_EXIT";
+        };
+
+        sway_space: sway_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE) &to 0>;
+            label = "SWAY_SPACE";
+        };
+
+        sway_shift_space: sway_shift_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LS(SPACE)) &to 0>;
+            label = "SWAY_SHIFT_SPACE";
+        };
+
+        sway_ctrl_space: sway_ctrl_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(LC(SPACE)) &to 0>;
+            label = "SWAY_CTRL_SPACE";
+        };
     };
 
     keymap {
@@ -172,10 +200,10 @@
 
         sway {
             bindings = <
-       &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)    &kp LG(NUMBER_6)  &kp LG(NUMBER_7)  &kp LG(NUMBER_8)  &kp LG(NUMBER_9)  &kp LG(NUMBER_0)
-       &kp LG(A)         &kp LG(S)         &kp LG(E)         &kp LG(F)         &sway_resize        &kp LG(H)         &kp LG(J)         &kp LG(K)         &kp LG(L)         &trans
-&to 0  &trans            &trans            &kp LG(W)         &trans            &sway_workspace     &trans            &trans            &trans            &trans            &trans            &to 0
-                                           &trans            &trans            &trans              &trans            &trans            &trans
+       &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)   &kp LG(NUMBER_5)    &kp LG(NUMBER_6)  &kp LG(NUMBER_7)  &kp LG(NUMBER_8)  &kp LG(NUMBER_9)  &kp LG(NUMBER_0)
+       &kp LG(A)         &kp LG(S)         &kp LG(E)         &kp LG(F)          &sway_resize        &kp LG(H)         &kp LG(J)         &kp LG(K)         &kp LG(L)         &trans
+&to 0  &trans            &trans            &kp LG(W)         &trans             &sway_workspace     &trans            &trans            &trans            &trans            &trans            &to 0
+                                           &sway_ctrl_space  &sway_shift_space  &sway_space         &sway_enter       &trans            &trans
             >;
         };
     };
