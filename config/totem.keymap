@@ -1,5 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define BASE  0
 #define SYMB  1
@@ -9,6 +10,20 @@
 #define SYST  5
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        symb_tog {
+            bindings = <&tog 1>;
+            key-positions = <33 36>;
+        };
+
+        syst_tog {
+            bindings = <&tog 5>;
+            key-positions = <24 34>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -17,7 +32,7 @@
             bindings = <
             &kp Q             &kp W            &kp E     &kp R               &kp T                 &kp Y             &kp U                &kp I       &kp O            &kp P
             &mt LEFT_SHIFT A  &mt RIGHT_ALT S  &lt 1 D   &mt LEFT_CONTROL F  &mt LEFT_ALT G        &mt LEFT_ALT H    &mt RIGHT_CONTROL J  &lt 1 K     &mt RIGHT_ALT L  &mt RIGHT_SHIFT SEMI
-&kp ESCAPE  &kp Z             &kp X            &kp C     &kp V               &kp B                 &kp N             &kp M                &kp COMMA   &kp DOT          &kp SLASH             &to 6
+&kp ESCAPE  &kp Z             &kp X            &kp C     &mt RIGHT_GUI V     &kp B                 &kp N             &mt RIGHT_GUI M      &kp COMMA   &kp DOT          &kp SLASH             &to 3
                                                &sl FUNC  &lt 4 ESCAPE        &mt LEFT_GUI SPACE    &mt LEFT_GUI RET  &lt 3 BACKSPACE      &kp C_MENU
             >;
         };
@@ -25,50 +40,50 @@
         SYMB {
             display-name = "Symbols";
             bindings = <
-            &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans
-            &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans
-&trans      &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans    &trans
-                            &trans     &trans                  &trans                 &trans             &trans            &trans
+        &kp NUMBER_1           &kp NUMBER_2          &kp NUMBER_3  &kp NUMBER_4          &kp NUMBER_5              &kp NUMBER_6       &kp NUMBER_7            &kp NUMBER_8  &kp NUMBER_9         &kp NUMBER_0
+        &mt LEFT_SHIFT ESCAPE  &mt RIGHT_ALT INSERT  &lt 1 DELETE  &mt LEFT_CONTROL TAB  &mt LEFT_ALT BACKSPACE    &mt LEFT_ALT LEFT  &mt RIGHT_CONTROL DOWN  &lt 1 UP      &mt RIGHT_ALT RIGHT  &mt RIGHT_SHIFT ENTER
+&trans  &kp GRAVE              &kp MINUS             &kp EQUAL     &kp LEFT_BRACKET      &kp RIGHT_BRACKET         &kp BACKSLASH      &kp SQT                 &kp COMMA     &kp PERIOD           &kp SLASH              &trans
+                                                     &trans        &trans                &trans                    &trans             &trans                  &trans
             >;
         };
 
         FUNC {
             display-name = "Function";
             bindings = <
-            &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans
-            &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans
-&trans      &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans    &trans
-                            &trans     &trans                  &trans                 &trans             &trans            &trans
+        &kp F1              &kp F2             &kp F3   &kp F4                &kp F5              &kp F6            &kp F7                 &kp F8   &kp F9             &kp F10
+        &mt LEFT_SHIFT F11  &mt RIGHT_ALT F12  &kp F13  &mt LEFT_CONTROL F14  &mt LEFT_ALT F15    &mt LEFT_ALT F16  &mt RIGHT_CONTROL F17  &kp F18  &mt RIGHT_ALT F19  &mt RIGHT_SHIFT F20
+&trans  &kp F21             &kp F22            &kp F23  &mt RIGHT_GUI F24     &trans              &trans            &trans                 &trans   &trans             &to 5                &trans
+                                               &trans   &trans                &trans              &trans            &trans                 &trans
             >;
         };
 
         NAVI {
             display-name = "Navigation";
             bindings = <
-            &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans
-            &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans
-&trans      &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans    &trans
-                            &trans     &trans                  &trans                 &trans             &trans            &trans
+        &trans      &trans   &trans   &trans   &trans           &kp HOME  &kp DEL        &kp INS      &kp END    &kp BACKSPACE
+        &kp ESCAPE  &kp INS  &kp DEL  &kp TAB  &kp BACKSPACE    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp ENTER
+&trans  &trans      &trans   &trans   &trans   &trans           &trans    &kp PAGE_DOWN  &kp PAGE_UP  &trans     &trans         &to 0
+                             &trans   &trans   &trans           &trans    &trans         &trans
             >;
         };
 
         MOUS {
             display-name = "Mouse";
             bindings = <
-            &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans
-            &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans
-&trans      &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans    &trans
-                            &trans     &trans                  &trans                 &trans             &trans            &trans
+        &trans    &trans     &trans     &trans     &trans      &trans          &trans          &trans        &trans           &trans
+        &mkp MB5  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB4    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP  &mmv MOVE_RIGHT  &mkp LCLK
+&trans  &trans    &trans     &trans     &trans     &trans      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans     &trans
+                             &trans     &trans     &trans      &trans          &trans          &trans
             >;
         };
 
         SYST {
             display-name = "System";
             bindings = <
-            &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans
-            &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans
-&trans      &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans    &trans
-                            &trans     &trans                  &trans                 &trans             &trans            &trans
+        &trans  &trans  &trans  &trans  &trans    &trans            &trans        &trans        &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &kp K_MUTE        &kp C_VOL_DN  &kp C_VOL_UP  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp K_PLAY_PAUSE  &kp K_PREV    &kp K_NEXT    &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans            &trans        &trans
             >;
         };
     };
