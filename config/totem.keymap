@@ -15,60 +15,60 @@
         BASE {
             display-name = "Base";
             bindings = <
-            &kp Q  &kp W  &kp E     &kp R                  &kp T                 &kp Y             &kp U            &kp I      &kp O    &kp P
-            &kp A  &kp S  &kp D     &kp F                  &kp G                 &kp H             &kp J            &kp K      &kp L    &kp SEMI
-&kp ESCAPE  &kp Z  &kp X  &kp C     &kp V                  &kp B                 &kp N             &kp M            &kp COMMA  &kp DOT  &kp SLASH  &to 6
-                          &to FUNC  &mt LEFT_SHIFT ESCAPE  &mt LEFT_GUI SPACE    &mt LEFT_GUI RET  &lt 3 BACKSPACE  &kp MINUS
+            &kp Q             &kp W            &kp E     &kp R               &kp T                 &kp Y             &kp U                &kp I       &kp O            &kp P
+            &mt LEFT_SHIFT A  &mt RIGHT_ALT S  &lt 1 D   &mt LEFT_CONTROL F  &mt LEFT_ALT G        &mt LEFT_ALT H    &mt RIGHT_CONTROL J  &lt 1 K     &mt RIGHT_ALT L  &mt RIGHT_SHIFT SEMI
+&kp ESCAPE  &kp Z             &kp X            &kp C     &kp V               &kp B                 &kp N             &kp M                &kp COMMA   &kp DOT          &kp SLASH             &to 6
+                                               &sl FUNC  &lt 4 ESCAPE        &mt LEFT_GUI SPACE    &mt LEFT_GUI RET  &lt 3 BACKSPACE      &kp C_MENU
             >;
         };
 
         SYMB {
             display-name = "Symbols";
             bindings = <
-            &kp Q  &kp W  &kp E     &kp R                  &kp T                 &kp Y             &kp U            &kp I      &kp O    &kp P
-            &kp A  &kp S  &kp D     &kp F                  &kp G                 &kp H             &kp J            &kp K      &kp L    &kp SEMI
-&kp ESCAPE  &kp Z  &kp X  &kp C     &kp V                  &kp B                 &kp N             &kp M            &kp COMMA  &kp DOT  &kp SLASH  &to 6
-                          &to FUNC  &mt LEFT_SHIFT ESCAPE  &mt LEFT_GUI SPACE    &mt LEFT_GUI RET  &lt 3 BACKSPACE  &kp MINUS
+            &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans
+            &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans
+&trans      &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans    &trans
+                            &trans     &trans                  &trans                 &trans             &trans            &trans
             >;
         };
 
         FUNC {
             display-name = "Function";
             bindings = <
-            &kp Q  &kp W  &kp E     &kp R                  &kp T                 &kp Y             &kp U            &kp I      &kp O    &kp P
-            &kp A  &kp S  &kp D     &kp F                  &kp G                 &kp H             &kp J            &kp K      &kp L    &kp SEMI
-&kp ESCAPE  &kp Z  &kp X  &kp C     &kp V                  &kp B                 &kp N             &kp M            &kp COMMA  &kp DOT  &kp SLASH  &to 6
-                          &to FUNC  &mt LEFT_SHIFT ESCAPE  &mt LEFT_GUI SPACE    &mt LEFT_GUI RET  &lt 3 BACKSPACE  &kp MINUS
+            &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans
+            &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans
+&trans      &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans    &trans
+                            &trans     &trans                  &trans                 &trans             &trans            &trans
             >;
         };
 
         NAVI {
             display-name = "Navigation";
             bindings = <
-            &kp Q  &kp W  &kp E     &kp R                  &kp T                 &kp Y             &kp U            &kp I      &kp O    &kp P
-            &kp A  &kp S  &kp D     &kp F                  &kp G                 &kp H             &kp J            &kp K      &kp L    &kp SEMI
-&kp ESCAPE  &kp Z  &kp X  &kp C     &kp V                  &kp B                 &kp N             &kp M            &kp COMMA  &kp DOT  &kp SLASH  &to 6
-                          &to FUNC  &mt LEFT_SHIFT ESCAPE  &mt LEFT_GUI SPACE    &mt LEFT_GUI RET  &lt 3 BACKSPACE  &kp MINUS
+            &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans
+            &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans
+&trans      &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans    &trans
+                            &trans     &trans                  &trans                 &trans             &trans            &trans
             >;
         };
 
         MOUS {
             display-name = "Mouse";
             bindings = <
-            &kp Q  &kp W  &kp E     &kp R                  &kp T                 &kp Y             &kp U            &kp I      &kp O    &kp P
-            &kp A  &kp S  &kp D     &kp F                  &kp G                 &kp H             &kp J            &kp K      &kp L    &kp SEMI
-&kp ESCAPE  &kp Z  &kp X  &kp C     &kp V                  &kp B                 &kp N             &kp M            &kp COMMA  &kp DOT  &kp SLASH  &to 6
-                          &to FUNC  &mt LEFT_SHIFT ESCAPE  &mt LEFT_GUI SPACE    &mt LEFT_GUI RET  &lt 3 BACKSPACE  &kp MINUS
+            &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans
+            &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans
+&trans      &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans    &trans
+                            &trans     &trans                  &trans                 &trans             &trans            &trans
             >;
         };
 
         SYST {
             display-name = "System";
             bindings = <
-            &kp Q             &kp W            &kp E     &kp R               &kp T                 &kp Y             &kp U                &kp I       &kp O            &kp P
-            &mt LEFT_SHIFT A  &mt RIGHT_ALT S  &lt 1 D   &mt LEFT_CONTROL F  &mt LEFT_ALT G        &mt LEFT_ALT H    &mt RIGHT_CONTROL J  &lt 1 K     &mt RIGHT_ALT L  &mt RIGHT_SHIFT SEMI
-&kp ESCAPE  &kp Z             &kp X            &kp C     &kp V               &kp B                 &kp N             &kp M                &kp COMMA   &kp DOT          &kp SLASH             &to 6
-                                               &sl FUNC  &lt 4 ESCAPE        &mt LEFT_GUI SPACE    &mt LEFT_GUI RET  &lt 3 BACKSPACE      &kp C_MENU
+            &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans
+            &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans
+&trans      &trans  &trans  &trans     &trans                  &trans                 &trans             &trans            &trans      &trans    &trans    &trans
+                            &trans     &trans                  &trans                 &trans             &trans            &trans
             >;
         };
     };
