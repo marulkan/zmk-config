@@ -42,40 +42,40 @@
         BASE {
             display-name = "Base";
             bindings = <
-            &kp Q             &kp W            &kp E     &kp R               &kp T                 &kp Y             &kp U                &kp I       &kp O            &kp P
-            &mt LEFT_SHIFT A  &mt RIGHT_ALT S  &lt 1 D   &mt LEFT_CONTROL F  &mt LEFT_ALT G        &mt LEFT_ALT H    &mt RIGHT_CONTROL J  &lt 1 K     &mt RIGHT_ALT L  &mt RIGHT_SHIFT SEMI
-&kp ESCAPE  &kp Z             &kp X            &kp C     &mt RIGHT_GUI V     &kp B                 &kp N             &mt RIGHT_GUI M      &kp COMMA   &kp DOT          &kp SLASH             &to 3
-                                               &sl FUNC  &lt 4 BACKSPACE     &mt LEFT_GUI SPACE    &mt LEFT_GUI RET  &lt 3 TAB            &kp C_MENU
+            &kp Q             &kp W            &kp E     &kp R               &kp T                 &kp Y             &kp U               &kp I       &kp O            &kp P
+            &mt LEFT_SHIFT A  &mt RIGHT_ALT S  &lt 1 D   &mt LEFT_CONTROL F  &mt LEFT_ALT G        &mt LEFT_ALT H    &mt LEFT_CONTROL J  &lt 1 K     &mt RIGHT_ALT L  &mt RIGHT_SHIFT SEMI
+&kp ESCAPE  &kp Z             &kp X            &kp C     &mt RIGHT_GUI V     &kp B                 &kp N             &mt RIGHT_GUI M     &kp COMMA   &kp DOT          &kp SLASH             &to 3
+                                               &sl FUNC  &lt 4 BACKSPACE     &mt LEFT_GUI SPACE    &mt LEFT_GUI RET  &lt 3 TAB           &kp C_MENU
             >;
         };
 
         SYMB {
             display-name = "Symbols";
             bindings = <
-        &kp NUMBER_1           &kp NUMBER_2          &kp NUMBER_3  &kp NUMBER_4          &kp NUMBER_5              &kp NUMBER_6       &kp NUMBER_7            &kp NUMBER_8  &kp NUMBER_9         &kp NUMBER_0
-        &mt LEFT_SHIFT ESCAPE  &mt RIGHT_ALT INSERT  &lt 1 DELETE  &mt LEFT_CONTROL TAB  &mt LEFT_ALT BACKSPACE    &mt LEFT_ALT LEFT  &mt RIGHT_CONTROL DOWN  &lt 1 UP      &mt RIGHT_ALT RIGHT  &mt RIGHT_SHIFT ENTER
-&trans  &kp GRAVE              &kp MINUS             &kp EQUAL     &kp LEFT_BRACKET      &kp RIGHT_BRACKET         &kp BACKSLASH      &kp SQT                 &kp COMMA     &kp PERIOD           &kp SLASH              &trans
-                                                     &trans        &trans                &trans                    &trans             &trans                  &trans
+       &kp NUMBER_1           &kp NUMBER_2          &kp NUMBER_3  &kp NUMBER_4          &kp NUMBER_5              &kp NUMBER_6       &kp NUMBER_7            &kp NUMBER_8  &kp NUMBER_9         &kp NUMBER_0
+       &mt LEFT_SHIFT ESCAPE  &mt RIGHT_ALT INSERT  &lt 1 DELETE  &mt LEFT_CONTROL TAB  &mt LEFT_ALT BACKSPACE    &mt LEFT_ALT LEFT  &mt RIGHT_CONTROL DOWN  &lt 1 UP      &mt RIGHT_ALT RIGHT  &mt RIGHT_SHIFT ENTER
+&to 0  &kp GRAVE              &kp MINUS             &kp EQUAL     &kp LEFT_BRACKET      &kp RIGHT_BRACKET         &kp BACKSLASH      &kp SQT                 &kp COMMA     &kp PERIOD           &kp SLASH              &trans
+                                                    &trans        &trans                &trans                    &trans             &trans                  &trans
             >;
         };
 
         FUNC {
             display-name = "Function";
             bindings = <
-        &kp F1              &kp F2             &kp F3   &kp F4                &kp F5              &kp F6            &kp F7                 &kp F8   &kp F9             &kp F10
-        &mt LEFT_SHIFT F11  &mt RIGHT_ALT F12  &kp F13  &mt LEFT_CONTROL F14  &mt LEFT_ALT F15    &mt LEFT_ALT F16  &mt RIGHT_CONTROL F17  &kp F18  &mt RIGHT_ALT F19  &mt RIGHT_SHIFT F20
-&trans  &kp F21             &kp F22            &kp F23  &mt RIGHT_GUI F24     &trans              &trans            &trans                 &trans   &trans             &to 5                &trans
-                                               &trans   &trans                &trans              &trans            &trans                 &trans
+       &kp F1              &kp F2             &kp F3   &kp F4                &kp F5              &kp F6            &kp F7                 &kp F8       &kp F9             &kp F10
+       &mt LEFT_SHIFT F11  &mt RIGHT_ALT F12  &kp F13  &mt LEFT_CONTROL F14  &mt LEFT_ALT F15    &mt LEFT_ALT F16  &mt RIGHT_CONTROL F17  &kp F18      &mt RIGHT_ALT F19  &mt RIGHT_SHIFT F20
+&to 0  &kp F21             &kp F22            &kp F23  &mt RIGHT_GUI F24     &trans              &trans            &kp RA(LEFT_BRACKET)   &kp RA(SQT)  &kp RA(SEMICOLON)  &to 5                &trans
+                                              &trans   &trans                &trans              &trans            &trans                 &trans
             >;
         };
 
         NAVI {
             display-name = "Navigation";
             bindings = <
-        &trans      &trans   &trans   &trans   &trans           &kp HOME  &kp DEL        &kp INS      &kp END    &kp BACKSPACE
-        &kp ESCAPE  &kp INS  &kp DEL  &kp TAB  &kp BACKSPACE    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp ENTER
-&trans  &trans      &trans   &trans   &trans   &trans           &trans    &kp PAGE_DOWN  &kp PAGE_UP  &trans     &trans         &to 0
-                             &trans   &trans   &trans           &trans    &trans         &trans
+       &trans      &trans   &trans   &trans   &trans           &kp HOME  &kp DEL        &kp INS      &kp END    &kp BACKSPACE
+       &kp ESCAPE  &kp INS  &kp DEL  &kp TAB  &kp BACKSPACE    &kp LEFT  &kp DOWN       &kp UP       &kp RIGHT  &kp ENTER
+&to 0  &trans      &trans   &trans   &trans   &trans           &trans    &kp PAGE_DOWN  &kp PAGE_UP  &trans     &trans         &to 0
+                            &trans   &trans   &trans           &trans    &trans         &trans
             >;
         };
 
